@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Bookmark Add{% endblock %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %} #보안을 위해 사용하는 것
+        {{form.as_p}}
+        <input type="submit" value="Update" class="btn btn-info btn-sm">
+    </form>
+{% endblock %}
